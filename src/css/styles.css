@@ -5,12 +5,19 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./base-css-files/reset.css');
+@import url('./base-css-files/base.css');
+@import url('./base-css-files/container.css');
+@import url('./base-css-files/animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./footer.css');
+@import url('./sections-css/header.css');
+@import url('./sections-css/hero.css');
+@import url('./sections-css/yoga-classes.css');
+@import url('./sections-css/team.css');
+@import url('./sections-css/gallery.css');
+@import url('./sections-css/about-us.css');
+@import url('./sections-css/testimonials.css');
+@import url('./sections-css/pricing.css');
+@import url('./sections-css/modal.css');
+@import url('./sections-css/footer.css');
