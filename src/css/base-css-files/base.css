@@ -42,3 +42,6 @@ body {
   min-width: 74px;
   min-height: 34px;
 }
+main {
+  background-color: #f2fafa;
+}
