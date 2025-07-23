@@ -1,7 +1,7 @@
 /* #region yoga */
 
 .container-yoga {
-  background: #dfebeb;
+  background-color: #dfebeb;
 }
 
 .yoga {
@@ -16,6 +16,11 @@
   text-align: center;
   margin-bottom: 12px;
 }
+.yoga-wrapper {
+  max-width: 343px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
 
 .yoga-header {
   font-family: 'Cabin', sans-serif;
@@ -25,10 +30,16 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.yoga-header-display-desktop-and-mobile {
+  display: inline;
+}
+
+.yoga-header-display-desktop-tablet {
+  display: none;
+}
 
 .yoga-description {
   text-align: center;
-  margin-bottom: 48px;
   line-height: 160%;
 }
 
@@ -82,7 +93,7 @@
 /* #endregion */
 @media only screen and (min-width: 768px) {
   .container-yoga {
-    background: none;
+    background-color: transparent;
   }
   .yoga {
     padding: 40px 0;
@@ -91,13 +102,22 @@
   .yoga-label {
     margin-bottom: 16px;
   }
-
+  .yoga-wrapper {
+    max-width: 704px;
+    margin-bottom: 40px;
+  }
   .yoga-header {
     margin-bottom: 24px;
   }
+  .yoga-header-display-desktop-and-mobile {
+    display: none;
+  }
 
+  .yoga-header-display-desktop-tablet {
+    display: inline;
+  }
   .yoga-description {
-    margin-bottom: 40px;
+    font-size: 18px;
   }
 
   .yoga-list {
@@ -132,6 +152,21 @@
 @media only screen and (min-width: 1336px) {
   .yoga {
     padding: 112px 0;
+  }
+  .yoga-wrapper {
+    max-width: 768px;
+  }
+
+  .yoga-header {
+    font-size: 52px;
+  }
+
+  .yoga-header-display-desktop-and-mobile {
+    display: inline;
+  }
+
+  .yoga-header-display-desktop-tablet {
+    display: none;
   }
 
   .yoga-item,
