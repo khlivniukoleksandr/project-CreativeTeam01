@@ -1,0 +1,58 @@
+.gallery-container {                 
+display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+    padding: 64px 20px;
+     width: 375px;
+     height: 922px;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+    .gallery-container {
+        gap: 80px;
+        padding: 40px 32px;
+         width: 768px;
+          height: 1210px;
+    }
+}
+
+/* Десктоп */
+@media (min-width: 1336px) {
+    .gallery-container {
+    gap: 80px;
+    padding: 112px 64px;
+      width: 1440px;
+      height: 1368px;
+       
+    }
+}
+
+
+.gallery-title {
+  font-weight: 400;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+text-align: center;
+color: var(--color-scheme-3-text);
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 24px;
+   font-weight: 400;
+font-size: 40px;
+  }
+}
+/* Десктоп */
+@media (min-width: 1336px) {
+  .gallery-title {
+    font-weight: 400;
+font-size: 52px;
+    margin-bottom: 24px;
+  }
+}
