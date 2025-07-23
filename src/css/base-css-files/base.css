@@ -9,7 +9,7 @@
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-
+  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -41,4 +41,7 @@ body {
   background: #c2d9fc;
   min-width: 74px;
   min-height: 34px;
+}
+main {
+  background-color: #f2fafa;
 }
