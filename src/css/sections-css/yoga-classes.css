@@ -2,7 +2,6 @@
 
 .yoga {
   padding: 64px 0;
-  outline: 4px solid rgb(72, 241, 0);
 }
 
 .yoga-label {
@@ -132,7 +131,6 @@
   .yoga-item,
   .yoga-list > li:last-child {
     flex: 1;
-    outline: 4px solid rgb(130, 0, 128);
   }
 
   .yoga-item-img {
