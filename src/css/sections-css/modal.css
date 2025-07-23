@@ -20,7 +20,6 @@
 }
 
 .modal {
-  /* padding: 64px 16px 112px 16px; */
   top: 50%;
   left: 50%;
   position: absolute;
@@ -35,13 +34,18 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
 .modal-close-btn {
   position: absolute;
   display: flex;
   top: 16px;
   right: 16px;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -50,6 +54,11 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  opacity: 0.5;
 }
 
 .modal-title {
@@ -147,4 +156,9 @@
   display: block;
   margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field-btn-send:hover,
+.modal-field-btn-send:focus {
+  opacity: 0.5;
 }
