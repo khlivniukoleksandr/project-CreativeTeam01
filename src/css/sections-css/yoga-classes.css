@@ -1,0 +1,163 @@
+/* #region yoga */
+
+.yoga {
+  padding: 64px 0;
+  outline: 4px solid rgb(72, 241, 0);
+}
+
+.yoga-label {
+  font-weight: 600;
+  line-height: 150%;
+
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.yoga-header {
+  font-family: 'Cabin', sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 20px;
+}
+
+.yoga-description {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.yoga-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: self-start;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.yoga-item {
+}
+
+.yoga-item-img {
+  border-radius: 16px;
+  margin: 0 auto 24px auto;
+}
+
+.yoga-item-title {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.yoga-item-text {
+  text-align: center;
+}
+
+.yoga-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  font-weight: 500;
+
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 100%;
+  height: 46px;
+  background: #c2d9fc;
+}
+
+.yoga-button:hover,
+.yoga-button:focus {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: rgba(13, 11, 10, 0.05);
+}
+/* #endregion */
+@media only screen and (min-width: 768px) {
+  .yoga {
+    padding: 40px 0;
+  }
+
+  .yoga-label {
+    margin-bottom: 16px;
+  }
+
+  .yoga-header {
+    margin-bottom: 24px;
+  }
+
+  .yoga-description {
+    margin-bottom: 40px;
+  }
+
+  .yoga-list {
+    gap: 28px 24px;
+    margin-bottom: 40px;
+  }
+
+  .yoga-item {
+    flex-basis: calc(100% / 2 - 24px / 2);
+  }
+  .yoga-list > li:last-child {
+    flex-basis: 100%;
+  }
+  .yoga-item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .yoga-item-title {
+    margin-bottom: 0;
+  }
+
+  .yoga-button {
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1336px) {
+  .yoga {
+    padding: 112px 0;
+  }
+
+  .yoga-item,
+  .yoga-list > li:last-child {
+    flex: 1;
+    outline: 4px solid rgb(130, 0, 128);
+  }
+
+  .yoga-item-img {
+    margin-bottom: 32px;
+  }
+
+  .yoga-item-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+/*  */
+* {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #0d0b0a;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
