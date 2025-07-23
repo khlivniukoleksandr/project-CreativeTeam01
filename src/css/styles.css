@@ -5,9 +5,9 @@
   |============================
 */
 /* Common styles */
+@import url('./base-css-files/container.css');
 @import url('./base-css-files/reset.css');
 @import url('./base-css-files/base.css');
-@import url('./base-css-files/container.css');
 @import url('./base-css-files/animations.css');
 
 /* Sections style */

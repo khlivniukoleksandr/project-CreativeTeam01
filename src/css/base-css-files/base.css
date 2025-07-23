@@ -34,3 +34,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  background: #c2d9fc;
+  min-width: 74px;
+  min-height: 34px;
+}
