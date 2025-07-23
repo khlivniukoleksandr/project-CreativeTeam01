@@ -7,6 +7,7 @@
 .yoga {
   padding: 64px 0;
   color: #0d0b0a;
+  text-align: center;
 }
 
 .yoga-label {
@@ -29,13 +30,6 @@
   letter-spacing: 0.01em;
   text-align: center;
   margin-bottom: 20px;
-}
-.yoga-header-display-desktop-and-mobile {
-  display: inline;
-}
-
-.yoga-header-display-desktop-tablet {
-  display: none;
 }
 
 .yoga-description {
@@ -69,17 +63,13 @@
 
   margin-bottom: 20px;
 }
-.yoga-item-title-display {
-  display: block;
-}
+
 .yoga-item-text {
   text-align: center;
   line-height: 160%;
 }
 
 .yoga-button {
-  display: block;
-  margin: 0 auto;
   text-align: center;
 
   font-weight: 500;
@@ -90,7 +80,21 @@
   height: 46px;
 }
 
+.yoga-display-desktop-mobile {
+  display: inline;
+}
+
+.yoga-display-tablet {
+  display: none;
+}
+.yoga-display-desktop {
+  display: none;
+}
+.yoga-display-desktop-tablet {
+  display: none;
+}
 /* #endregion */
+
 @media only screen and (min-width: 768px) {
   .container-yoga {
     background-color: transparent;
@@ -109,13 +113,7 @@
   .yoga-header {
     margin-bottom: 24px;
   }
-  .yoga-header-display-desktop-and-mobile {
-    display: none;
-  }
 
-  .yoga-header-display-desktop-tablet {
-    display: inline;
-  }
   .yoga-description {
     font-size: 18px;
   }
@@ -140,12 +138,23 @@
   .yoga-item-title {
     margin-bottom: 0;
   }
-  .yoga-item-title-display {
-    display: none;
-  }
 
   .yoga-button {
     width: 110px;
+  }
+
+  .yoga-display-desktop-mobile {
+    display: none;
+  }
+
+  .yoga-display-tablet {
+    display: inline;
+  }
+  .yoga-display-mobile {
+    display: none;
+  }
+  .yoga-display-desktop-tablet {
+    display: inline;
   }
 }
 
@@ -161,14 +170,6 @@
     font-size: 52px;
   }
 
-  .yoga-header-display-desktop-and-mobile {
-    display: inline;
-  }
-
-  .yoga-header-display-desktop-tablet {
-    display: none;
-  }
-
   .yoga-item,
   .yoga-list > li:last-child {
     flex: 1;
@@ -182,15 +183,12 @@
     margin-bottom: 24px;
     font-size: 36px;
   }
-}
-/*  */
 
-html {
-  box-sizing: border-box;
-}
+  .yoga-display-desktop-mobile {
+    display: inline;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  .yoga-display-tablet {
+    display: none;
+  }
 }
