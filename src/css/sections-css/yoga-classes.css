@@ -1,7 +1,12 @@
 /* #region yoga */
 
+.container-yoga {
+  background: #dfebeb;
+}
+
 .yoga {
   padding: 64px 0;
+  color: #0d0b0a;
 }
 
 .yoga-label {
@@ -18,14 +23,13 @@
   line-height: 120%;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #0d0b0a;
-
   margin-bottom: 20px;
 }
 
 .yoga-description {
   text-align: center;
   margin-bottom: 48px;
+  line-height: 160%;
 }
 
 .yoga-list {
@@ -54,9 +58,12 @@
 
   margin-bottom: 20px;
 }
-
+.yoga-item-title-display {
+  display: block;
+}
 .yoga-item-text {
   text-align: center;
+  line-height: 160%;
 }
 
 .yoga-button {
@@ -65,22 +72,18 @@
   text-align: center;
 
   font-weight: 500;
+  line-height: 160%;
 
-  border: 1px solid #c2d9fc;
-  border-radius: 100px;
   padding: 10px 24px;
   width: 100%;
   height: 46px;
-  background: #c2d9fc;
 }
 
-.yoga-button:hover,
-.yoga-button:focus {
-  border: 1px solid rgba(255, 255, 255, 0);
-  background: rgba(13, 11, 10, 0.05);
-}
 /* #endregion */
 @media only screen and (min-width: 768px) {
+  .container-yoga {
+    background: none;
+  }
   .yoga {
     padding: 40px 0;
   }
@@ -117,6 +120,9 @@
   .yoga-item-title {
     margin-bottom: 0;
   }
+  .yoga-item-title-display {
+    display: none;
+  }
 
   .yoga-button {
     width: 110px;
@@ -143,13 +149,7 @@
   }
 }
 /*  */
-* {
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #0d0b0a;
-}
+
 html {
   box-sizing: border-box;
 }
