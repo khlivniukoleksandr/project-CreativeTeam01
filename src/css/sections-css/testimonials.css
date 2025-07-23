@@ -1,0 +1,58 @@
+
+.section-testimonials {
+    
+}
+
+.testimonials-title {
+    font-family:"Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials-subtitle {
+    font-size: 18px;
+    line-height: 1.60;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonials-list-item {
+    border-radius: 24px;
+    padding: 12px;
+    background-color: #dfebeb;
+}
+
+.testimonial-text {
+    font-size: 22px;
+    line-height: 1.60;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.reviewer {
+    border-radius: 100%;
+    justify-self: center;
+}
+
+.reviewer-name {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.60;
+    text-align: center;
+}
+
+.reviewer-position {
+    line-height: 1.50;
+    text-align: center;
+}
