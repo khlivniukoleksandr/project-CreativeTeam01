@@ -30,7 +30,7 @@ display: flex;
     }
 }
 
-
+/* Mobil */
 .gallery-title {
   font-weight: 400;
 font-size: 40px;
@@ -54,5 +54,31 @@ font-size: 40px;
     font-weight: 400;
 font-size: 52px;
     margin-bottom: 24px;
+  }
+}
+
+/* Mobil */
+.gallery-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-scheme-3-text);
+}
+/* Планшет */
+@media (min-width: 768px){
+.gallery-text {
+  line-height: 1.6;
+   text-align: center;
+  color: var(--color-scheme-3-text);
+}
+}
+
+/* Десктоп */
+@media (min-width: 1336px) {
+  .gallery-text{
+    font-weight: 500;
+     
   }
 }
