@@ -144,6 +144,10 @@
     .team-list {
         gap: 64px 24px;
     }
+
+    .team-list-item {
+        width: calc((100% - 48px) / 3);
+    }
     
     .team-img img {
         width: 421px;
