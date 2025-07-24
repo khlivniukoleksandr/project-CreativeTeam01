@@ -8,8 +8,6 @@
     flex-direction: column;
     gap: 48px;
     padding: 64px 20px;
-     width: 375px;
-     height: 922px;
      margin: auto;
 }
 
@@ -21,17 +19,18 @@
         gap: 80px;
         padding: 40px 32px;
         width: 768px;
-        height: 1210px;
+       
     }
 }
 
 /* Десктоп */
 @media (min-width: 1336px) {
     .gallery-container {
+      max-width: 1440px;
       gap: 80px;
       padding: 112px 64px;
       width: 1440px;
-      height: 1368px;
+     
     }
 }
 
@@ -62,7 +61,6 @@ font-size: 52px;
     margin-bottom: 24px;
   }
 }
-
 
 
 /* Mobil */
@@ -126,22 +124,20 @@ font-size: 52px;
 }
 
 /* Десктоп */
-@media screen and  (min-width: 1336px) {
-    .gallery-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      justify-content: center;
-        grid-template-columns: repeat(3, 1fr);
-       /* 3 фото в ряд */
-
-    }
-    .gallery-item {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+/* Desktop */
+@media (min-width: 1336px) {
+  .gallery-list {
+    max-width: 1312px;
+    height: 920px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
   }
+
+
+}
 
 
 /* самі фото mobil*/
@@ -150,16 +146,22 @@ font-size: 52px;
   max-width: none;
   
 }
-
+@media screen and (min-width: 1336px) {
+  .gallery-item {
+    border-radius: 16px;
+      width: 421px;
+      height: 448px;
+      /* 3 фото з двома відступами по 24px */
+      max-width: calc((100% - 48px) / 3);
+    }
+}
 
 
 /* Мобільні - маленькі фото */
 .gallery-item img {
-  width: 156px;
-  height: 156px;
   object-fit: cover;
   display: block;
-  border-radius: 8px;
+ border-radius: 16px;
 }
 
 /* Планшет -  фото */
@@ -170,11 +172,14 @@ font-size: 52px;
   }
 }
 
-/* Десктоп - ще більші фото (421x448) */
-@media (min-width: 1336px) {
+/* Десктоп - */
+@media screen and (min-width: 1336px) {
   .gallery-item img {
- display: block;
- width: 100%;
- height: auto;
+  display: block;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   }
 }
+
