@@ -88,6 +88,10 @@
 }
 
 @media screen and (min-width:768px){
+    .team {
+        padding: 40px 0;
+    }
+
     .team-title {
         margin-bottom: 16px;
     }
@@ -132,7 +136,11 @@
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1336px) {
+    .team {
+        padding: 112px 0;
+    }
+
     .team-list {
         gap: 64px 24px;
     }
