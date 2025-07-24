@@ -37,11 +37,14 @@
     line-height: 1.60;
     text-align: center;
 }
-
+.reviewer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .reviewer {
 margin-top: 32px;
-    border-radius: 100%;
-    justify-self: center;
+border-radius: 100%;
 }
 
 .reviewer-name {
