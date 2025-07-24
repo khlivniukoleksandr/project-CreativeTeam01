@@ -9,7 +9,6 @@
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,8 +16,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+* {
   font-family: 'Sarabun', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: #0d0b0a;
 }
 
 .visually-hidden {
