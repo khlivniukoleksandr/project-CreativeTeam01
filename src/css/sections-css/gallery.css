@@ -97,6 +97,16 @@ font-size: 52px;
   gap: 24px;
 }
 
+/* Планшет */
+
+
+/* Desktop */
+@media (min-width: 1336px) {
+  .gallery-text-wrapper {
+  max-width: 768px;
+  height: 144px;
+  }
+}
 
 
 
