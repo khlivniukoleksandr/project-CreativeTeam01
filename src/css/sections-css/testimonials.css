@@ -75,17 +75,29 @@ margin-top: 32px;
     margin-top: 67px;
 }
 }
-@media screen and (min-width: 1336px){
+@media screen and (min-width: 1336px) {
+    .testimonials-title{
+        font-size: 52px;
+    }
 .section-testimonials {
         padding: 112px 0;
     }
-    .testimonials-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 24px;
-            row-gap: 24px;
-        }
-        .testimonials-list-item{
-            width: calc((100% - 24px)/2);
-        }
+.testimonials-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.testimonials-list-item:first-child{
+    padding: 12px;
+}
+.testimonials-list-item{
+    flex-basis: calc((100% - 24px) / 2);
+}
+.testimonials-list-item:nth-child(2) .reviewer {
+    margin-top: 100px;
+}
+.testimonials-list-item:nth-child(3) .reviewer {
+    margin-top: 65px;
+}
 }
