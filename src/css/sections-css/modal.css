@@ -13,6 +13,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
@@ -52,8 +53,6 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -72,6 +71,7 @@
   margin-bottom: 32px;
   margin-top: 64px;
 }
+
 .modal-sessions {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
@@ -80,7 +80,9 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  margin-bottom: 8px;
 }
+
 .modal-price {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
@@ -124,7 +126,6 @@
   height: 42px;
   background-color: rgba(13, 11, 10, 0.05);
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field-input::placeholder {
@@ -161,4 +162,62 @@
 .modal-field-btn-send:hover,
 .modal-field-btn-send:focus {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    border-radius: 16px;
+    width: 704px;
+    height: 573px;
+    min-height: 573px;
+  }
+
+  .modal-title {
+    margin-bottom: 24px;
+    font-size: 52px;
+  }
+  .modal-sessions {
+    font-size: 22px;
+  }
+
+  .modal-price {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+
+  .modal-form {
+    margin-left: 92px;
+    margin-right: 92px;
+    margin-bottom: 64px;
+    width: 520px;
+    height: 246px;
+  }
+
+  .modal-form-row {
+    display: flex;
+    gap: 24px;
+  }
+
+  .modal-form-row .modal-form-field {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .modal-field-btn-send {
+    padding: 0;
+    width: 155px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .modal {
+    width: 768px;
+  }
+
+  .modal-form {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+    width: 640px;
+  }
 }
