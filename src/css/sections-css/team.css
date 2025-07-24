@@ -1,0 +1,148 @@
+.team{
+    padding: 64px 0;
+    background-color: #f2fafa;
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d0b0a;
+
+    margin-bottom: 12px;
+}
+
+.team-subtitle{
+    font-family: "Cabin", sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+
+    margin-bottom: 20px;
+}
+
+.team-text{
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+
+    padding-bottom: 48px;
+}
+
+.team-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+}
+
+.team-img img{
+    margin: auto;
+
+    margin-bottom: 20px;
+    width: 343px;
+    height: 221px;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.team-card-subtitle {
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+
+    margin-bottom: 12px;
+}
+
+.team-card-text {
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+
+    margin-bottom: 20px;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+@media screen and (min-width:768px){
+    .team-title {
+        margin-bottom: 16px;
+    }
+
+    .team-subtitle {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+        
+    .team-text {
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .team-img img {    
+        margin-bottom: 24px;
+        width: 340px;
+        height: 395px;
+        }
+
+    .team-card{
+        max-width: 340px;
+    }
+
+    .team-card-title {
+        font-size: 22px;
+    }
+
+    .team-card-subtitle {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .team-card-text {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .team-list {
+        gap: 64px 24px;
+    }
+    
+    .team-img img {
+        width: 421px;
+        height: 395px;
+    }
+
+    .team-card {
+         max-width: 421px;
+    }
+}
