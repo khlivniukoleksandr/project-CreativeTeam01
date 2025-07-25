@@ -119,7 +119,9 @@ font-size: 52px;
   flex-direction: row;
   gap: 24px;
   background: var(--color-scheme-3-background);
+  width: 335px;
 }
+
 
 /* Планшет фотки */
 @media (min-width: 768px) {
@@ -130,6 +132,7 @@ font-size: 52px;
       justify-content: flex-start;
       flex-direction: row;
       gap: 24px;
+      width: 704px;
   }
 }
 
