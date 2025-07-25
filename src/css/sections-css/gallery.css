@@ -1,0 +1,138 @@
+.gallery-section {
+  padding: 64px 0;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+  .gallery-section {
+    padding: 40px 0px;
+  }
+}
+
+/* Десктоп */
+@media (min-width: 1336px) {
+  .gallery-section {
+    padding: 112px 0px;
+  }
+}
+
+/* Mobil */
+.gallery-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 24px;
+  }
+}
+/* Десктоп */
+@media (min-width: 1336px) {
+  .gallery-title {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Mobil */
+.gallery-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Планшет */
+
+/* Десктоп */
+@media (min-width: 1336px) {
+  .gallery-text {
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+/* мобілка контейнер для тексту */
+.gallery-text-wrapper {
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+  .gallery-text-wrapper {
+    margin-bottom: 80px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1336px) {
+  .gallery-text-wrapper {
+    margin-bottom: 80px;
+  }
+}
+
+/* Mobil фотки */
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/* Планшет фотки тут унаслідує */
+
+/* Десктоп  тут унаслідує */
+
+/* самі фото mobil*/
+.gallery-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
+@media screen and (min-width: 1336px) {
+  .gallery-item {
+    border-radius: 16px;
+    width: 421px;
+    height: 448px;
+    max-width: calc((100% - 48px) / 3);
+  }
+}
+
+/* Мобільні - маленькі фото */
+.gallery-item img {
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+/* Планшет -  фото */
+@media (min-width: 768px) {
+  .gallery-item img {
+    width: 340px;
+    height: 291px;
+  }
+}
+
+/* Десктоп - foto */
+@media screen and (min-width: 1336px) {
+  .gallery-item img {
+    display: block;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
