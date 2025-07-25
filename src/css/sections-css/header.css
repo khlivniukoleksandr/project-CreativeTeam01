@@ -1,0 +1,132 @@
+.header {
+  background-color: #f2fafa;
+}
+.header-desctop-navigation {
+  display: none;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  box-sizing: border-box;
+}
+.header-button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 20px;
+  line-height: 1.6;
+}
+.header-link-logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2fafa;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 999;
+}
+.mobile-menu-container {
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  max-height: 812px;
+}
+.mobile-menu-header {
+  padding: 14px 0;
+  padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+.pop-up-close-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu-list {
+  margin-bottom: auto;
+}
+.mobile-menu-navigation {
+  margin-bottom: auto;
+}
+.mobile-menu-list-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.mobile-menu-list-link {
+  color: #0d0b0a;
+}
+.mobile-menu-button {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1335px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    width: 204px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .mobile-menu {
+    display: none;
+  }
+  .hamburger-menu-icon {
+    display: none;
+  }
+  .header-container {
+    gap: 32px;
+  }
+  .header-desctop-navigation {
+    display: flex;
+    flex: 1;
+  }
+  .header-navigation-list {
+    display: flex;
+    gap: 32px;
+  }
+  .header-link-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-wrapper-header {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .header-button {
+    width: 105px;
+  }
+}
