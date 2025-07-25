@@ -1,9 +1,8 @@
 /*mob*/
-.about-us {
+.about-us-section {
   background-color: #dfebeb;
-  padding: 64px 16px;
+  padding: 64px 0;
 }
-
 .about-us-title {
   font: 400 40px / 1.2 'Cabin', sans-serif;
   letter-spacing: 0.01em;
@@ -66,11 +65,9 @@
 
 /*tablet*/
 @media screen and (min-width: 768px) {
-  .about-us {
-    background-color: #f2fafa;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 40px;
+  .about-us-section {
+    background-color: transparent;
+    padding: 40px 0;
   }
 
   .about-us-title {
@@ -88,6 +85,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+    padding-bottom: 40px;
   }
 
   .about-us-list-item {
@@ -101,7 +99,6 @@
   }
 
   .about-us-join-btn {
-    margin-top: 16px;
     width: 110px;
   }
 
@@ -112,8 +109,9 @@
 
 /*desctop*/
 @media screen and (min-width: 1336px) {
-  .about-us {
-    padding: 112px 64px;
+  .about-us-section {
+    background-color: transparent;
+    padding: 112px 0;
   }
 
   .about-us-list {
@@ -126,7 +124,7 @@
   .about-us-list-item {
     flex-basis: calc((100% - 72px) / 4);
     text-align: center;
-    padding-bottom: 22px;
+    padding-bottom: 0;
   }
 
   .about-us-paragraph {
