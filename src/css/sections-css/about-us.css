@@ -1,0 +1,145 @@
+/*mob*/
+.about-us-section {
+  background-color: #dfebeb;
+  padding: 64px 0;
+}
+.about-us-title {
+  font: 400 40px / 1.2 'Cabin', sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.about-us-paragraph {
+  font: 400 16px / 1.6 'Sarabun', sans-serif;
+  text-align: center;
+  color: #0d0b0a;
+  padding-top: 20px;
+  padding-bottom: 48px;
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.about-us-list-item-title {
+  font: 400 24px / 1.4 'Cabin', sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  padding-bottom: 20px;
+}
+
+.about-us-list-item-paragraph {
+  font: 400 16px / 1.6 'Sarabun', sans-serif;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.about-us-join-btn {
+  font: 500 16px / 1.6 'Sarabun', sans-serif;
+  color: #0d0b0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  height: 46px;
+  background-color: #c2d9fc;
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+.about-us-join-btn:hover,
+.about-us-join-btn:focus {
+  background: #c2d9fc;
+  opacity: 0.5;
+}
+
+.btn-now {
+  display: none;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .about-us-section {
+    background-color: transparent;
+    padding: 40px 0;
+  }
+
+  .about-us-title {
+    font: 400 40px / 1.2 'Cabin', sans-serif;
+  }
+
+  .about-us-paragraph {
+    font: 400 18px / 1.6 'Sarabun', sans-serif;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .about-us-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .about-us-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    text-align: center;
+    padding-bottom: 22px;
+  }
+
+  .about-us-list-item-title {
+    padding-bottom: 0;
+  }
+
+  .about-us-join-btn {
+    width: 110px;
+  }
+
+  .btn-now {
+    display: inline;
+  }
+}
+
+/*desctop*/
+@media screen and (min-width: 1336px) {
+  .about-us-section {
+    background-color: transparent;
+    padding: 112px 0;
+  }
+  .about-us-title {
+    font: 400 52px / 1.2 'Cabin', sans-serif;
+  }
+
+  .about-us-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .about-us-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .about-us-list-item-title {
+    font-size: 28px;
+  }
+
+  .about-us-paragraph {
+    padding-bottom: 40px;
+  }
+
+  .about-us-join-btn {
+    margin-top: 0;
+    width: 110px;
+  }
+}
