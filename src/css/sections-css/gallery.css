@@ -1,36 +1,21 @@
 
-.gallery-container { 
-    max-width: 375px; 
-    width: 100%;               
+.container {               
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
-    gap: 48px;
-    padding: 64px 20px;
-     margin: auto;
 }
 
 /* Планшет */
 @media (min-width: 768px) {
-     
-    .gallery-container {
-        max-width: 768px;
-        gap: 80px;
-        padding: 40px 32px;
-        width: 768px;
-       
+    .container {
+        padding: 40px 0px;
     }
 }
 
 /* Десктоп */
 @media (min-width: 1336px) {
-    .gallery-container {
-      max-width: 1440px;
-      gap: 80px;
-      padding: 112px 64px;
-      width: 1440px;
-     
+    .container {
+      padding: 112px 0px;
     }
 }
 
@@ -42,72 +27,61 @@ font-size: 40px;
 line-height: 1.2;
 letter-spacing: 0.01em;
 text-align: center;
-color: var(--color-scheme-3-text);
+margin-bottom: 20px;
 }
 
 /* Планшет */
 @media (min-width: 768px) {
   .gallery-title {
     margin-bottom: 24px;
-   font-weight: 400;
-font-size: 40px;
   }
 }
 /* Десктоп */
 @media (min-width: 1336px) {
   .gallery-title {
-    font-weight: 400;
-font-size: 52px;
+    font-size: 52px;
     margin-bottom: 24px;
   }
 }
 
-
 /* Mobil */
 .gallery-text {
-  font-family: var(--font-family);
-  font-weight: 400;
     font-size: 18px;
-    line-height: 1.6;
     text-align: center;
-    color: var(--color-scheme-3-text);
 }
+
 /* Планшет */
-@media (min-width: 768px){
-.gallery-text {
-  line-height: 1.6;
-   text-align: center;
-  color: var(--color-scheme-3-text);
-}
-}
+
 
 /* Десктоп */
 @media (min-width: 1336px) {
   .gallery-text{
     font-weight: 500;
-      text-align: center;
+     text-align: center;
   }
 }
 
 
 /* мобілка контейнер для тексту */
 .gallery-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  justify-content: center;
+  margin-bottom: 48px;
 }
 
 /* Планшет */
+@media (min-width: 768px) {
+.gallery-text-wrapper{
+  margin-bottom: 80px;
+}
+}
 
 
 /* Desktop */
 @media (min-width: 1336px) {
   .gallery-text-wrapper {
-  max-width: 768px;
-  height: 144px;
+  margin-bottom: 80px;
   }
 }
-
 
 
 
@@ -118,45 +92,20 @@ font-size: 52px;
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  background: var(--color-scheme-3-background);
-  width: 335px;
+ 
 }
 
 
-/* Планшет фотки */
-@media (min-width: 768px) {
-  .gallery-list {
-    display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: row;
-      gap: 24px;
-      width: 704px;
-  }
-}
+/* Планшет фотки тут унаслідує */
 
-/* Десктоп */
+/* Десктоп  тут унаслідує */
 
-@media (min-width: 1336px) {
-  .gallery-list {
-    max-width: 1312px;
-    height: 920px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-  }
-
-
-}
 
 
 /* самі фото mobil*/
 .gallery-item {
   flex-basis: calc((100% - 24px) / 2);
-  max-width: none;
+  
   
 }
 @media screen and (min-width: 1336px) {
@@ -164,7 +113,6 @@ font-size: 52px;
     border-radius: 16px;
       width: 421px;
       height: 448px;
-      /* 3 фото з двома відступами по 24px */
       max-width: calc((100% - 48px) / 3);
     }
 }
