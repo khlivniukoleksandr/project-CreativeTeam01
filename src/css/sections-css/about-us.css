@@ -127,6 +127,10 @@
     padding-bottom: 0;
   }
 
+  .about-us-list-item-title {
+    font-size: 28px;
+  }
+
   .about-us-paragraph {
     padding-bottom: 40px;
   }
