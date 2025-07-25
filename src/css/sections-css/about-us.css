@@ -77,7 +77,7 @@
   .about-us-paragraph {
     font: 400 18px / 1.6 'Sarabun', sans-serif;
     padding-top: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
 
   .about-us-list {
@@ -112,6 +112,9 @@
   .about-us-section {
     background-color: transparent;
     padding: 112px 0;
+  }
+  .about-us-title {
+    font: 400 52px / 1.2 'Cabin', sans-serif;
   }
 
   .about-us-list {
