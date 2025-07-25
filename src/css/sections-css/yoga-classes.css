@@ -32,6 +32,13 @@
   margin-bottom: 20px;
 }
 
+.yoga-item-title span,
+.yoga-header span {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .yoga-description {
   text-align: center;
   line-height: 160%;
@@ -78,6 +85,7 @@
   padding: 10px 24px;
   width: 100%;
   height: 46px;
+  display: block;
 }
 
 .yoga-display-desktop-mobile {
@@ -141,6 +149,7 @@
 
   .yoga-button {
     width: 110px;
+    display: inline;
   }
 
   .yoga-display-desktop-mobile {
