@@ -104,9 +104,10 @@
     min-width: 100%;
     height: 46px;
     background-color: #C2D9FC;
-    border: none;
+    border: 1px solid #c2d9fc;
     border-radius: 100px;
     display: block;
+    padding: 10px auto;
 
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
@@ -115,7 +116,14 @@
     color: #0d0b0a;
 }
 
+.pricing-button:hover,
+.pricing-button:focus {
+    opacity: 0.5;
+}
 
+.pricing-button:active {
+    background-color: transparent;
+}
 
 @media (min-width:768px) {
     .pricing-container {
@@ -158,7 +166,7 @@
         margin-bottom: 22px;
     }
 
-    .pricing-list-item:last-child {
+    /* .pricing-list-item:last-child {
         padding: 86px 16px;
         max-width: 100%;
         display: flex;
@@ -178,7 +186,7 @@
     .pricing-list-item:last-child .pricing-button {
         max-width: calc((100% - 32px)/2);
         min-width: auto;
-    }
+    } */
 }
 
 @media (min-width:1336px) {
