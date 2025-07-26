@@ -1,5 +1,6 @@
-
-
+.hero-image {
+  width: 100%;
+}
 .container.hero-container {
   padding: 0;
 }
@@ -24,7 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top:24px;
+  padding-top: 24px;
 }
 
 .button-pricing,
@@ -46,8 +47,8 @@
 }
 
 .button-gallery {
-  border:none;
-background-color: rgba(13, 11, 10, 0.05);
+  border: none;
+  background-color: rgba(13, 11, 10, 0.05);
 }
 
 @media screen and (min-width: 768px) {
@@ -56,7 +57,7 @@ background-color: rgba(13, 11, 10, 0.05);
     gap: 8px;
   }
 
-.hero-title-container {
+  .hero-title-container {
     max-width: 423px;
   }
 
@@ -104,7 +105,7 @@ background-color: rgba(13, 11, 10, 0.05);
     padding-top: 32px;
   }
 
-  .button-pricing{
+  .button-pricing {
     width: 128px;
-}
+  }
 }
