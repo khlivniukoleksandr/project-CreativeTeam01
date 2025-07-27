@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-CreativeTeam01/company_logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project-CreativeTeam01/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YogaBloom</title>
     <!-- Шрифти -->
@@ -27,7 +27,7 @@
     />
 
     <script type="module" crossorigin src="/project-CreativeTeam01/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CreativeTeam01/assets/index-G2CxbqM3.css">
+    <link rel="stylesheet" crossorigin href="/project-CreativeTeam01/assets/index-BVmFOPT8.css">
   </head>
   <body>
     <!-- Header -->
@@ -36,26 +36,39 @@
     <nav class="header-desctop-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-list-item">
-          <a href="">Yoga Classes</a>
+          <a href="#yoga-classes" class="header-navigation-list-item-link"
+            >Yoga Classes</a
+          >
         </li>
         <li class="header-navigation-list-item">
-          <a href="">Team</a>
+          <a href="#team" class="header-navigation-list-item-link">Team</a>
         </li>
         <li class="header-navigation-list-item">
-          <a href="">Testimonials</a>
+          <a href="#testimonials" class="header-navigation-list-item-link"
+            >Testimonials</a
+          >
         </li>
         <li class="header-navigation-list-item">
-          <a href="">Pricing</a>
+          <a href="#pricing" class="header-navigation-list-item-link"
+            >Pricing</a
+          >
         </li>
         <li class="header-navigation-list-item">
-          <a href="">Contacts</a>
+          <a href="#footer" class="header-navigation-list-item-link"
+            >Contacts</a
+          >
         </li>
       </ul>
     </nav>
-    <svg width="24" height="24" class="hamburger-menu-icon">
-      <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-hamburger-menu"></use>
-    </svg>
-
+    <button
+      type="button"
+      class="mobile-menu-open-btn"
+      aria-label="Open mobile menu"
+    >
+      <svg width="24" height="24" class="hamburger-menu-icon">
+        <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-hamburger-menu"></use>
+      </svg>
+    </button>
     <a href="index.html" class="header-link-logo">
       <svg width="84" height="36">
         <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-logo"></use>
@@ -82,7 +95,9 @@
             <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-logo"></use>
           </svg>
         </a>
-        <button type="button" class="button header-button">Join</button>
+        <button type="button" class="button header-button">
+          Join <span class="mobile-menu-button-tablet-span">Now</span>
+        </button>
       </div>
       <nav class="mobile-menu-navigation">
         <ul class="mobile-menu-list">
@@ -132,8 +147,8 @@
           growth.
         </p>
         <div class="hero-buttons">
-          <a class="button-pricing" href="#pricing">Join Now</a>
-          <a class="button-gallery" href="#gallery">Learn More</a>
+          <button class="button button-pricing">Join Now</button>
+          <button class="button button-gallery">Learn More</button>
         </div>
       </div>
     </div>
@@ -142,7 +157,7 @@
 
 
       <!-- Yoga classes section -->
-      <section class="container-yoga">
+      <section class="container-yoga" id="yoga-classes">
   <div class="container">
     <div class="yoga">
       <p class="yoga-label">Explore</p>
@@ -218,9 +233,9 @@
         </li>
       </ul>
 
-      <a href="/join" class="button yoga-button"
-        >Join <span class="yoga-display-desktop-tablet">now</span></a
-      >
+      <button class="button yoga-button">
+        Join <span class="yoga-display-desktop-tablet">now</span>
+      </button>
     </div>
   </div>
 </section>
@@ -649,15 +664,15 @@
         </p>
       </li>
     </ul>
-    <a href="#pricing" class="about-us-join-btn">
+    <button class="button about-us-join-btn">
       Join&nbsp;<span class="btn-now">now</span>
-    </a>
+    </button>
   </div>
 </section>
 
 
       <!-- Testimonials -->
-      <section class="section section-testimonials">
+      <section class="section section-testimonials" id="testimonials">
   <div class="container">
     <h2 class="testimonials-title">Testimonials</h2>
     <p class="testimonials-subtitle">What our happy clients say</p>
@@ -780,7 +795,9 @@
             <p class="pricing-course-benefit-text">Community support group</p>
           </li>
         </ul>
-        <button type="button" class="pricing-button">Join</button>
+        <button type="button" class="button pricing-button pricing-button-10">
+          Join
+        </button>
       </li>
       <li class="pricing-list-item">
         <p class="pricing-course">8 Sessions Package</p>
@@ -805,13 +822,20 @@
             <p class="pricing-course-benefit-text">Community support group</p>
           </li>
         </ul>
-        <button type="button" class="pricing-button">Join</button>
+        <button type="button" class="button pricing-button pricing-button-65">
+          Join
+        </button>
       </li>
       <li class="pricing-list-item">
         <div class="pricing-list-last-text">
           <p class="pricing-course">12 Sessions Package</p>
           <p class="pricing-course-price">$80</p>
-          <button type="button" class="pricing-button-tablet">Join</button>
+          <button
+            type="button"
+            class="button pricing-button-tablet pricing-button-80"
+          >
+            Join
+          </button>
         </div>
 
         <ul class="pricing-course-list">
@@ -848,7 +872,9 @@
             <p class="pricing-course-benefit-text">Community support group</p>
           </li>
         </ul>
-        <button type="button" class="pricing-button">Join</button>
+        <button type="button" class="button pricing-button pricing-button-80">
+          Join
+        </button>
       </li>
     </ul>
   </div>
@@ -856,7 +882,7 @@
 
     </main>
     <!-- Footer section -->
-    <footer class="footer-links section">
+    <footer class="footer-links section" id="footer">
   <div class="container footer-container">
     <div class="footer-content">
       <div class="footer-logo-wrapper">
@@ -1020,7 +1046,7 @@
 <div class="backdrop modal-10" data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
-      <svg class=".modal-icon-close" width="32" height="32">
+      <svg class="modal-icon-close" width="32" height="32">
         <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-close-button"></use>
       </svg>
     </button>
@@ -1062,6 +1088,7 @@
               name="phone"
               class="modal-field-input"
               placeholder="Placeholder"
+              required
             />
           </div>
         </div>
@@ -1075,7 +1102,7 @@
 <div class="backdrop modal-65" data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
-      <svg class=".modal-icon-close" width="32" height="32">
+      <svg class="modal-icon-close" width="32" height="32">
         <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-close-button"></use>
       </svg>
     </button>
@@ -1117,6 +1144,7 @@
               name="phone"
               class="modal-field-input"
               placeholder="Placeholder"
+              required
             />
           </div>
         </div>
@@ -1130,7 +1158,7 @@
 <div class="backdrop modal-80" data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
-      <svg class=".modal-icon-close" width="32" height="32">
+      <svg class="modal-icon-close" width="32" height="32">
         <use href="/project-CreativeTeam01/assets/icons-rHTZ-nRO.svg#icon-close-button"></use>
       </svg>
     </button>
@@ -1172,6 +1200,7 @@
               name="phone"
               class="modal-field-input"
               placeholder="Placeholder"
+              required
             />
           </div>
         </div>
