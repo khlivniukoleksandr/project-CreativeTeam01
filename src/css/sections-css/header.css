@@ -94,7 +94,7 @@
   height: 50px;
 }
 .mobile-menu-list-link {
-  color: #0d0b0a;
+  cursor: pointer;
 }
 .mobile-menu-button {
   padding: 10px 0;

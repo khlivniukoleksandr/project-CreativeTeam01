@@ -12,9 +12,28 @@ closeMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
 });
 
-// Кнопка join now
-
 document.querySelector('.header-button').addEventListener('click', () => {
+  document.querySelector('#pricing').scrollIntoView({ behavior: 'smooth' });
+});
+// Mobile menu
+const navLinks = document.querySelectorAll('.mobile-menu-list-link');
+const joinButtons = document.querySelectorAll(
+  '.mobile-menu-button, .header-button'
+);
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
+});
+
+joinButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
+});
+
+document.querySelector('.mobile-menu-button').addEventListener('click', () => {
   document.querySelector('#pricing').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -46,6 +65,7 @@ document.querySelectorAll('[data-modal-close]').forEach(button => {
     });
   });
 });
+
 //  10$ modal window
 
 const openModal10 = document.querySelector('.pricing-button-10');
