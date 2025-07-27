@@ -1,0 +1,201 @@
+.pricing-section {
+  padding: 64px 0;
+}
+
+.pricing-container {
+  text-align: center;
+}
+
+.pricing-tagline {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.pricin-title {
+  font-family: 'Cabin', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.pricing-choice-text {
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.pricing-list-item {
+  background-color: #dfebeb;
+  padding: 32px 24px;
+  border: 0px solid rgba(13, 11, 10, 0.15);
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cabin', sans-serif;
+  max-width: calc(375px - 16px - 24px);
+}
+
+.pricing-course {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+
+.pricing-course-price {
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+
+.pricing-course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.pricing-course-benefit {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.pricing-checkmark {
+  fill: #0d0b0a;
+  margin-right: 16px;
+}
+
+.pricing-button,
+.pricing-button-tablet {
+  min-width: 100%;
+  height: 46px;
+  background-color: #c2d9fc;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  display: block;
+  padding: 10px auto;
+
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+}
+
+.pricing-button-tablet {
+  display: none;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  opacity: 0.5;
+}
+
+.pricing-button:active {
+  background-color: transparent;
+}
+
+.pricing-button:disabled {
+  opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+  .pricing-section {
+    padding: 40px 0;
+  }
+  .pricing-tagline {
+    margin-bottom: 16px;
+  }
+
+  .pricin-title {
+    margin-bottom: 24px;
+  }
+
+  .pricing-choice-text {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .pricing-list-item {
+    max-width: calc((100% - 24px) / 2);
+    padding: 16px;
+  }
+
+  .pricing-course {
+    font-size: 22px;
+  }
+
+  .pricing-course-price {
+    margin-bottom: 32px;
+    font-size: 72px;
+  }
+
+  .pricing-course-list {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1335px) {
+  .pricing-list-item:last-child {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 86px 16px;
+  }
+
+  .pricing-list-item:last-child .pricing-button {
+    display: none;
+  }
+
+  .pricing-button-tablet {
+    display: block;
+  }
+
+  .pricing-list-item:last-child .pricing-list-last-text,
+  .pricing-list-item:last-child .pricing-course-list {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+
+@media (min-width: 1336px) {
+  .pricing-section {
+    padding: 112px 0;
+  }
+  .pricin-title {
+    font-size: 52px;
+  }
+
+  .pricing-choice-text {
+    margin-bottom: 40px;
+  }
+
+  .pricing-list-item {
+    max-width: calc((100% - 24px * 2) / 3);
+    height: 509px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-course-list {
+    margin-bottom: auto;
+  }
+}
