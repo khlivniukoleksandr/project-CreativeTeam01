@@ -41,16 +41,12 @@
 
 .about-us-join-btn {
   font: 500 16px / 1.6 'Sarabun', sans-serif;
-  color: #0d0b0a;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   height: 46px;
-  background-color: #c2d9fc;
-  width: 100%;
-  max-width: 343px;
   margin: 0 auto;
+  transition: 0.3s ease;
 }
 
 .about-us-join-btn:hover,

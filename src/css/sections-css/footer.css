@@ -3,10 +3,6 @@
   padding: 64px 0;
 }
 
-.container {
-  padding: 0 64px;
-}
-
 .footer-content {
   display: flex;
   background-color: rgba(255, 255, 255, 0.87);
@@ -152,10 +148,6 @@
     flex-direction: column;
   }
 
-  .container {
-    padding: 0 16px;
-  }
-
   .footer-content {
     padding: 32px;
     gap: 48px;
@@ -192,9 +184,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1335px) {
-  .container {
-    padding: 0 32px;
-  }
   .footer-links {
     padding: 40px 0;
   }

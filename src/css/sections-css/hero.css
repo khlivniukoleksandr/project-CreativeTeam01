@@ -31,21 +31,15 @@
 .button-pricing,
 .button-gallery {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 160%;
-  color: #0d0b0a;
-  text-decoration: none;
-  border: 1px solid #c2d9fc;
-  border-radius: 100px;
-  max-width: 329px;
   height: 46px;
-  background-color: #c2d9fc;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  transition: 0.3s ease;
 }
-
+.button-pricing:hover,
+.button-pricing:hover,
+.button-gallery:focus,
+.button-gallery:hover {
+  opacity: 0.5;
+}
 .button-gallery {
   border: none;
   background-color: rgba(13, 11, 10, 0.05);

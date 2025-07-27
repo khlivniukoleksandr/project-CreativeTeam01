@@ -40,6 +40,7 @@
   background: #c2d9fc;
   min-width: 74px;
   min-height: 34px;
+  transition: 0.3s ease;
 }
 main {
   background-color: #f2fafa;

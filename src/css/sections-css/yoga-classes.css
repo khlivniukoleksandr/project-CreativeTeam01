@@ -77,15 +77,15 @@
 }
 
 .yoga-button {
-  text-align: center;
-
   font-weight: 500;
-  line-height: 160%;
-
-  padding: 10px 24px;
   width: 100%;
   height: 46px;
   display: block;
+  transition: 0.3s ease;
+}
+.yoga-button:hover,
+.yoga-button:focus {
+  opacity: 0.5;
 }
 
 .yoga-display-desktop-mobile {
