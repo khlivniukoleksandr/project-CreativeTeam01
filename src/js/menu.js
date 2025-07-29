@@ -84,14 +84,10 @@ openModal65.addEventListener('click', () => {
 });
 
 // 80$ window
-document.querySelectorAll('.pricing-button-80').forEach(button => {
-  button.addEventListener('click', () => {
-    modal80.classList.add('is-open');
-  });
-});
-
 const openModal80 = document.querySelector('.modal-80');
 
-openModal80.addEventListener('click', () => {
-  openModal80.classList.add('is-open');
+document.querySelectorAll('.pricing-button-80').forEach(button => {
+  button.addEventListener('click', () => {
+    openModal80.classList.add('is-open');
+  });
 });
