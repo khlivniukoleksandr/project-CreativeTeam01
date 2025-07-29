@@ -90,8 +90,8 @@ document.querySelectorAll('.pricing-button-80').forEach(button => {
   });
 });
 
-const modal80 = document.querySelector('.modal-80');
+const openModal80 = document.querySelector('.modal-80');
 
 openModal80.addEventListener('click', () => {
-  modal80.classList.add('is-open');
+  openModal80.classList.add('is-open');
 });
